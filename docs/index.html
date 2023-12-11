@@ -71,6 +71,8 @@
 
         body {
             display: flex;
+            flex-direction: column;
+            gap: 7vh;
             width: 100vw;
             height: 100vh;
             align-items: center;
@@ -84,9 +86,84 @@
         h1 {
             text-transform: uppercase;
         }
+
+        .colors {
+            width: 70vw;
+            height: 5vw;
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-gap: 1vw;
+        }
+
+        .color {
+            height: 100%;
+            width: 100%;
+            border-radius: 25px;
+            border: 3px solid #FFFFFF;
+            color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            user-select: all;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .bg-flame {
+            background-color: var(--color-flame);
+        }
+
+        .bg-silver {
+            background-color: var(--color-silver);
+            color: var(--color-bunting);
+        }
+
+        .bg-grey {
+            background-color: var(--color-grey);
+            color: var(--color-bunting);
+        }
+
+        .bg-azure {
+            background-color: var(--color-azure);
+        }
+
+        .bg-navy {
+            background-color: var(--color-navy);
+        }
+
+        .bg-black {
+            background-color: var(--color-black);
+        }
+
+        .bg-bunting {
+            background-color: var(--color-bunting);
+        }
     </style>
 </head>
 <body>
-    <h1>/ gitcv /</h1>
+    <h1>gitcv / coming soon</h1>
+    <div class="colors">
+        <div class="color bg-silver">
+            #EBEBEB
+        </div>
+        <div class="color bg-grey">
+            #C0C0C0
+        </div>
+        <div class="color bg-azure">
+            #3A6EA5
+        </div>
+        <div class="color bg-navy">
+            #004E98
+        </div>
+        <div class="color bg-black">
+            #004E98
+        </div>
+        <div class="color bg-bunting">
+            #023047
+        </div>
+        <div class="color bg-flame">
+            #FF6700
+        </div>
+    </div>
 </body>
 </html>
